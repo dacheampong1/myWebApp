@@ -28,4 +28,12 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    private string JoinTwoStrings(string one, string two)
+{
+
+var NewString = string.Concat(one, two);
+return NewString;
+
+}
 }
